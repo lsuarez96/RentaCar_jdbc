@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="343.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.TariffViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="25.0" layoutY="25.0" prefHeight="376.0" prefWidth="291.0">
+            <columns>
+                <TableColumn fx:id="normalCol" prefWidth="75.0" text="Precio Normal" />
+                <TableColumn fx:id="speciallCol" prefWidth="75.0" text="Precio Especial" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="add" layoutX="38.0" layoutY="422.0" mnemonicParsing="false" onAction="#onAddPress" prefHeight="32.0" prefWidth="78.0" text="Agregar" />
+        <Button fx:id="del" layoutX="231.0" layoutY="422.0" mnemonicParsing="false" onAction="#onElimPressed" prefHeight="32.0" prefWidth="78.0" text="Eliminar" />
+    </children>
+</AnchorPane>

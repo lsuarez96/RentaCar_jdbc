@@ -1,0 +1,913 @@
+@startuml
+annotation java.lang.Override
+annotation java.lang.SuppressWarnings
+annotation javafx.fxml.FXML
+class Incumplidores_1491504634677_189007
+class Incumplidores_1491504640311_100928
+class Incumplidores_1491505027688_805181
+class Incumplidores_1491510655835_427723
+class Incumplidores_1491510677199_39472
+class JREvaluator
+class Listado32autos_1492519700264_620896
+class Listado32autos_1492519706404_56714
+class Main
+class ModelLayer.Auto
+class ModelLayer.Categorias
+class ModelLayer.Chofer
+class ModelLayer.Contrato
+class ModelLayer.FormaPago
+class ModelLayer.Login
+class ModelLayer.Marca
+class ModelLayer.Modelo
+class ModelLayer.Pais
+class ModelLayer.Role
+class ModelLayer.Situacion
+class ModelLayer.Tarifas
+class ModelLayer.Turista
+class ModelLayer.User
+class ServicesLayer.AutoServices
+class ServicesLayer.CategoriasServices
+class ServicesLayer.ChoferServices
+class ServicesLayer.ContratoServices
+class ServicesLayer.FormaPagoServices
+class ServicesLayer.LoginServices
+class ServicesLayer.MarcaServices
+class ServicesLayer.ModeloServices
+class ServicesLayer.PaisServices
+class ServicesLayer.ReportServices
+class ServicesLayer.RoleServices
+class ServicesLayer.ServicesLocator
+class ServicesLayer.SituacionServices
+class ServicesLayer.TarifasServices
+class ServicesLayer.TuristaServices
+class ServicesLayer.UserServices
+class Turistas32incumplidores_1491769865425_579835
+class Turistas32incumplidores_1491769869400_73877
+class UtilsLayer.Cipher
+class UtilsLayer.Connection
+class UtilsLayer.HourConverter
+class UtilsLayer.JasperManager
+class VisualLayer.AddBrandController
+class VisualLayer.AddCategoryController
+class VisualLayer.AddLoginController
+class VisualLayer.AddModifyContractController
+class VisualLayer.AddModifyCountryController
+class VisualLayer.AddModifyTarifController
+class VisualLayer.AddUserController
+class VisualLayer.AddorModifyCarController
+class VisualLayer.AddorModifyDriverController
+class VisualLayer.AddorModifyModelController
+class VisualLayer.AddorModifyTuristController
+class VisualLayer.AdminViewController
+class VisualLayer.BrandsViewController
+class VisualLayer.CarsViewController
+class VisualLayer.CategoryViewController
+class VisualLayer.ContractsViewController
+class VisualLayer.CountryViewController
+class VisualLayer.DriversViewController
+class VisualLayer.LoginScreenController
+class VisualLayer.LoginViewController
+class VisualLayer.MainClass
+class VisualLayer.ModelsViewController
+class VisualLayer.PayFormViewController
+class VisualLayer.RoleSelectorViewController
+class VisualLayer.StartPageController
+class VisualLayer.TariffViewController
+class VisualLayer.TuristsViewController
+class VisualLayer.UsersViewController
+class com.sun.javafx.collections.ImmutableObservableList
+class contrato32marca32y32modelo_1492167621460_59528
+class contrato32marca32y32modelo_1492167625459_366352
+class contrato32marca32y32modelo_1492167873209_166563
+class contrato32marca32y32modelo_1492167877926_384989
+class contrato32marca32y32modelo_1492520513259_364712
+class contrato32marca32y32modelo_1492523878927_908526
+class contrato32marca32y32modelo_1492523883150_76805
+class contrato32marca32y32modelo_1492526011035_649634
+class contrato32marca32y32modelo_1492526020279_886949
+class contrato32marca32y32modelo_1492606144876_88742
+class contrato32por32pais_1492169037600_110136
+class contrato32por32pais_1492169042253_846817
+class contrato32por32pais_1492974333614_538879
+class contrato32por32pais_1492974339326_936992
+class contrato32por32pais_1492974442846_804868
+class contrato32por32pais_1492974447051_840631
+class contrato32por32pais_1492974608531_158257
+class contrato32por32pais_1492974612991_944332
+class contratos_marca_modelo_1493492254916_405825
+class contratos_marca_modelo_1493492258683_434688
+class contratos_por_pais_1493492536208_288691
+class contratos_por_pais_1493492539329_190168
+class ingresos_anuales_1493492675333_658823
+class ingresos_anuales_1493492679550_74502
+class java.awt.Toolkit
+class java.io.IOException
+class java.net.URL
+class java.security.MessageDigest
+class java.security.NoSuchAlgorithmException
+class java.sql.CallableStatement
+class java.sql.Connection
+class java.sql.Date
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Types
+class java.time.LocalDate
+class java.util.ArrayList
+class java.util.LinkedList
+class java.util.List
+class java.util.Map
+class java.util.ResourceBundle
+class java.util.logging.Level
+class java.util.logging.Logger
+class javafx.application.Application
+class javafx.beans.property.SimpleFloatProperty
+class javafx.beans.property.SimpleIntegerProperty
+class javafx.beans.property.SimpleStringProperty
+class javafx.beans.value.ObservableValue
+class javafx.collections.FXCollections
+class javafx.collections.ObservableList
+class javafx.event.Event
+class javafx.fxml.FXMLLoader
+class javafx.scene.Scene
+class javafx.scene.control.Button
+class javafx.scene.control.ComboBox
+class javafx.scene.control.DatePicker
+class javafx.scene.control.Label
+class javafx.scene.control.PasswordField
+class javafx.scene.control.TableColumn
+class javafx.scene.control.TableView
+class javafx.scene.control.TextField
+class javafx.scene.control.Tooltip
+class javafx.scene.effect.Glow
+class javafx.scene.effect.Light
+class javafx.scene.effect.Lighting
+class javafx.scene.image.ImageView
+class javafx.scene.input.KeyEvent
+class javafx.scene.layout.AnchorPane
+class javafx.scene.paint.Color
+class javafx.stage.Stage
+class javafx.stage.StageStyle
+class javax.swing.JOptionPane
+class jdk.nashorn.internal.scripts.JO
+class list32choferes_1491768462856_874495
+class list32choferes_1491768468074_765221
+class listado32contratos_1492521594059_289395
+class listado32contratos_1492521601698_868334
+class listado32contratos_1492521749726_299526
+class listado32contratos_1492521783561_306998
+class listado32contratos_1492521805962_476116
+class listado32contratos_1492973056429_338624
+class listado32contratos_1492973579773_704759
+class listado_autos_1493484418056_930816
+class listado_autos_1493484427745_3404
+class listado_choferes_1493485032471_310677
+class listado_choferes_1493485038691_823819
+class listado_choferes_1493485053811_351866
+class listado_choferes_1493485058161_252513
+class listado_contratos_1493484712619_898210
+class listado_contratos_1493484716214_422474
+class listado_contratos_1493484741656_100109
+class listado_situaciones_1492103488044_146266
+class listado_situaciones_1492103493823_315195
+class listado_situaciones_1492103702887_691219
+class listado_situaciones_1492103706275_634368
+class listado_situaciones_1493491832291_679471
+class listado_situaciones_1493491837081_641751
+class listado_turistas_1493484562992_64453
+class listado_turistas_1493484566470_480564
+class net.sf.jasperreports.engine.JRException
+class net.sf.jasperreports.engine.JasperExportManager
+class net.sf.jasperreports.engine.JasperFillManager
+class net.sf.jasperreports.engine.JasperPrint
+class net.sf.jasperreports.view.JasperViewer
+class resumen32ingresos_1492175371518_178047
+class resumen32ingresos_1492175376196_76655
+class resumen32ingresos_1492176645836_353308
+class resumen32ingresos_1492522475505_519580
+class resumen32ingresos_1492522479167_849091
+class resumen32ingresos_1492522625092_665056
+class resumen32ingresos_1492522628934_909518
+class resumen32ingresos_1492522793178_689204
+class resumen32ingresos_1492522853776_680788
+class resumen32ingresos_1492522856895_92159
+class tur_x_pais_1491520151466_795733
+class tur_x_pais_1491520163778_932099
+class tur_x_pais_1491520265723_583640
+class tur_x_pais_1491520273437_78733
+class tur_x_pais_1491520396177_11030
+class tur_x_pais_1491520399451_617126
+class tur_x_pais_1491520425540_871745
+class tur_x_pais_1491520429120_343545
+class tur_x_pais_1492610476400_993896
+class tur_x_pais_1492610491350_801383
+class tur_x_pais_1492610717242_910220
+class tur_x_pais_1492610761198_875464
+class tur_x_pais_1492610778882_799864
+class tur_x_pais_1492610792031_892677
+class tur_x_pais_1492610814848_980989
+class tur_x_pais_1492971957651_111915
+class tur_x_pais_1492971962697_410900
+class turistas_incumplidores_1493491963416_988080
+class turistas_incumplidores_1493491968204_29132
+enum ModelLayer.LoggedRole
+interface javafx.fxml.Initializable
+Incumplidores_1491504634677_189007 --|> JREvaluator
+Incumplidores_1491504640311_100928 --|> JREvaluator
+Incumplidores_1491505027688_805181 --|> JREvaluator
+Incumplidores_1491510655835_427723 --|> JREvaluator
+Incumplidores_1491510677199_39472 --|> JREvaluator
+Listado32autos_1492519700264_620896 --|> JREvaluator
+Listado32autos_1492519706404_56714 --|> JREvaluator
+Main ..> ModelLayer.Auto
+Main ..> ModelLayer.Contrato
+Main ..> ModelLayer.Turista
+Main ..> ServicesLayer.AutoServices
+Main ..> ServicesLayer.ServicesLocator
+Main ..> java.sql.Date
+Main ..> java.util.List
+ModelLayer.Auto ..> java.lang.Override
+ModelLayer.Categorias ..> java.lang.Override
+ModelLayer.Contrato ..> java.lang.SuppressWarnings
+ModelLayer.Contrato ..> java.sql.Date
+ModelLayer.FormaPago ..> java.lang.Override
+ModelLayer.Login ..> java.lang.Override
+ModelLayer.Marca ..> java.lang.Override
+ModelLayer.Modelo ..> java.lang.Override
+ModelLayer.Situacion ..> java.lang.Override
+ModelLayer.User ..> java.lang.Override
+ServicesLayer.AutoServices ..> java.lang.SuppressWarnings
+ServicesLayer.AutoServices ..> ModelLayer.Auto
+ServicesLayer.AutoServices ..> java.sql.CallableStatement
+ServicesLayer.AutoServices ..> java.sql.Connection
+ServicesLayer.AutoServices ..> java.sql.ResultSet
+ServicesLayer.AutoServices ..> java.sql.SQLException
+ServicesLayer.AutoServices ..> java.sql.Types
+ServicesLayer.AutoServices ..> java.util.ArrayList
+ServicesLayer.AutoServices ..> java.util.List
+ServicesLayer.CategoriasServices ..> java.lang.SuppressWarnings
+ServicesLayer.CategoriasServices ..> ModelLayer.Categorias
+ServicesLayer.CategoriasServices ..> java.sql.CallableStatement
+ServicesLayer.CategoriasServices ..> java.sql.Connection
+ServicesLayer.CategoriasServices ..> java.sql.ResultSet
+ServicesLayer.CategoriasServices ..> java.sql.SQLException
+ServicesLayer.CategoriasServices ..> java.sql.Types
+ServicesLayer.CategoriasServices ..> java.util.LinkedList
+ServicesLayer.CategoriasServices ..> java.util.List
+ServicesLayer.ChoferServices ..> java.lang.SuppressWarnings
+ServicesLayer.ChoferServices ..> ModelLayer.Chofer
+ServicesLayer.ChoferServices ..> java.sql.CallableStatement
+ServicesLayer.ChoferServices ..> java.sql.Connection
+ServicesLayer.ChoferServices ..> java.sql.PreparedStatement
+ServicesLayer.ChoferServices ..> java.sql.ResultSet
+ServicesLayer.ChoferServices ..> java.sql.SQLException
+ServicesLayer.ChoferServices ..> java.sql.Types
+ServicesLayer.ChoferServices ..> java.util.LinkedList
+ServicesLayer.ChoferServices ..> java.util.List
+ServicesLayer.ContratoServices ..> java.lang.SuppressWarnings
+ServicesLayer.ContratoServices ..> ModelLayer.Contrato
+ServicesLayer.ContratoServices ..> java.sql.CallableStatement
+ServicesLayer.ContratoServices ..> java.sql.Connection
+ServicesLayer.ContratoServices ..> java.sql.Date
+ServicesLayer.ContratoServices ..> java.sql.ResultSet
+ServicesLayer.ContratoServices ..> java.sql.Types
+ServicesLayer.ContratoServices ..> java.util.LinkedList
+ServicesLayer.ContratoServices ..> java.util.List
+ServicesLayer.FormaPagoServices ..> java.lang.SuppressWarnings
+ServicesLayer.FormaPagoServices ..> ModelLayer.FormaPago
+ServicesLayer.FormaPagoServices ..> java.sql.CallableStatement
+ServicesLayer.FormaPagoServices ..> java.sql.Connection
+ServicesLayer.FormaPagoServices ..> java.sql.PreparedStatement
+ServicesLayer.FormaPagoServices ..> java.sql.ResultSet
+ServicesLayer.FormaPagoServices ..> java.sql.SQLException
+ServicesLayer.FormaPagoServices ..> java.sql.Types
+ServicesLayer.FormaPagoServices ..> java.util.LinkedList
+ServicesLayer.FormaPagoServices ..> java.util.List
+ServicesLayer.FormaPagoServices ..> java.util.logging.Level
+ServicesLayer.FormaPagoServices ..> java.util.logging.Logger
+ServicesLayer.LoginServices ..> ModelLayer.Login
+ServicesLayer.LoginServices ..> ModelLayer.Role
+ServicesLayer.LoginServices ..> ModelLayer.User
+ServicesLayer.LoginServices ..> UtilsLayer.Cipher
+ServicesLayer.LoginServices ..> java.sql.CallableStatement
+ServicesLayer.LoginServices ..> java.sql.Connection
+ServicesLayer.LoginServices ..> java.sql.ResultSet
+ServicesLayer.LoginServices ..> java.sql.SQLException
+ServicesLayer.LoginServices ..> java.sql.Types
+ServicesLayer.LoginServices ..> java.util.LinkedList
+ServicesLayer.LoginServices ..> java.util.List
+ServicesLayer.LoginServices ..> java.util.logging.Level
+ServicesLayer.LoginServices ..> java.util.logging.Logger
+ServicesLayer.MarcaServices ..> java.lang.SuppressWarnings
+ServicesLayer.MarcaServices ..> ModelLayer.Marca
+ServicesLayer.MarcaServices ..> java.sql.CallableStatement
+ServicesLayer.MarcaServices ..> java.sql.Connection
+ServicesLayer.MarcaServices ..> java.sql.PreparedStatement
+ServicesLayer.MarcaServices ..> java.sql.ResultSet
+ServicesLayer.MarcaServices ..> java.sql.SQLException
+ServicesLayer.MarcaServices ..> java.sql.Types
+ServicesLayer.MarcaServices ..> java.util.LinkedList
+ServicesLayer.MarcaServices ..> java.util.List
+ServicesLayer.ModeloServices ..> java.lang.SuppressWarnings
+ServicesLayer.ModeloServices ..> ModelLayer.Modelo
+ServicesLayer.ModeloServices ..> java.sql.CallableStatement
+ServicesLayer.ModeloServices ..> java.sql.Connection
+ServicesLayer.ModeloServices ..> java.sql.PreparedStatement
+ServicesLayer.ModeloServices ..> java.sql.ResultSet
+ServicesLayer.ModeloServices ..> java.sql.Types
+ServicesLayer.ModeloServices ..> java.util.LinkedList
+ServicesLayer.ModeloServices ..> java.util.List
+ServicesLayer.PaisServices ..> java.lang.SuppressWarnings
+ServicesLayer.PaisServices ..> ModelLayer.Pais
+ServicesLayer.PaisServices ..> java.sql.CallableStatement
+ServicesLayer.PaisServices ..> java.sql.Connection
+ServicesLayer.PaisServices ..> java.sql.PreparedStatement
+ServicesLayer.PaisServices ..> java.sql.ResultSet
+ServicesLayer.PaisServices ..> java.sql.Types
+ServicesLayer.PaisServices ..> java.util.LinkedList
+ServicesLayer.PaisServices ..> java.util.List
+ServicesLayer.ReportServices ..> java.sql.Connection
+ServicesLayer.ReportServices ..> java.sql.SQLException
+ServicesLayer.ReportServices ..> java.util.logging.Level
+ServicesLayer.ReportServices ..> java.util.logging.Logger
+ServicesLayer.ReportServices ..> net.sf.jasperreports.engine.JRException
+ServicesLayer.ReportServices ..> net.sf.jasperreports.engine.JasperExportManager
+ServicesLayer.ReportServices ..> net.sf.jasperreports.engine.JasperFillManager
+ServicesLayer.ReportServices ..> net.sf.jasperreports.engine.JasperPrint
+ServicesLayer.ReportServices ..> net.sf.jasperreports.view.JasperViewer
+ServicesLayer.RoleServices ..> ModelLayer.Role
+ServicesLayer.RoleServices ..> java.sql.CallableStatement
+ServicesLayer.RoleServices ..> java.sql.Connection
+ServicesLayer.RoleServices ..> java.sql.ResultSet
+ServicesLayer.RoleServices ..> java.sql.SQLException
+ServicesLayer.RoleServices ..> java.sql.Types
+ServicesLayer.RoleServices ..> java.util.LinkedList
+ServicesLayer.RoleServices ..> java.util.List
+ServicesLayer.ServicesLocator ..> java.lang.SuppressWarnings
+ServicesLayer.ServicesLocator ..> UtilsLayer.Connection
+ServicesLayer.ServicesLocator ..> java.sql.SQLException
+ServicesLayer.SituacionServices ..> java.lang.SuppressWarnings
+ServicesLayer.SituacionServices ..> ModelLayer.Situacion
+ServicesLayer.SituacionServices ..> java.sql.CallableStatement
+ServicesLayer.SituacionServices ..> java.sql.Connection
+ServicesLayer.SituacionServices ..> java.sql.PreparedStatement
+ServicesLayer.SituacionServices ..> java.sql.ResultSet
+ServicesLayer.SituacionServices ..> java.sql.Types
+ServicesLayer.SituacionServices ..> java.util.LinkedList
+ServicesLayer.SituacionServices ..> java.util.List
+ServicesLayer.TarifasServices ..> java.lang.SuppressWarnings
+ServicesLayer.TarifasServices ..> ModelLayer.Tarifas
+ServicesLayer.TarifasServices ..> java.sql.CallableStatement
+ServicesLayer.TarifasServices ..> java.sql.Connection
+ServicesLayer.TarifasServices ..> java.sql.ResultSet
+ServicesLayer.TarifasServices ..> java.sql.Types
+ServicesLayer.TarifasServices ..> java.util.LinkedList
+ServicesLayer.TarifasServices ..> java.util.List
+ServicesLayer.TuristaServices ..> java.lang.SuppressWarnings
+ServicesLayer.TuristaServices ..> ModelLayer.Turista
+ServicesLayer.TuristaServices ..> java.sql.CallableStatement
+ServicesLayer.TuristaServices ..> java.sql.Connection
+ServicesLayer.TuristaServices ..> java.sql.ResultSet
+ServicesLayer.TuristaServices ..> java.sql.Types
+ServicesLayer.TuristaServices ..> java.util.LinkedList
+ServicesLayer.TuristaServices ..> java.util.List
+ServicesLayer.UserServices ..> java.lang.SuppressWarnings
+ServicesLayer.UserServices ..> ModelLayer.Role
+ServicesLayer.UserServices ..> ModelLayer.User
+ServicesLayer.UserServices ..> UtilsLayer.Cipher
+ServicesLayer.UserServices ..> java.sql.CallableStatement
+ServicesLayer.UserServices ..> java.sql.Connection
+ServicesLayer.UserServices ..> java.sql.ResultSet
+ServicesLayer.UserServices ..> java.sql.SQLException
+ServicesLayer.UserServices ..> java.sql.Types
+ServicesLayer.UserServices ..> java.util.LinkedList
+ServicesLayer.UserServices ..> java.util.List
+Turistas32incumplidores_1491769865425_579835 --|> JREvaluator
+Turistas32incumplidores_1491769869400_73877 --|> JREvaluator
+UtilsLayer.Cipher ..> ServicesLayer.ServicesLocator
+UtilsLayer.Cipher ..> java.security.MessageDigest
+UtilsLayer.Cipher ..> java.security.NoSuchAlgorithmException
+UtilsLayer.Cipher ..> java.sql.CallableStatement
+UtilsLayer.Cipher ..> java.sql.SQLException
+UtilsLayer.Cipher ..> java.util.logging.Level
+UtilsLayer.Cipher ..> java.util.logging.Logger
+UtilsLayer.Connection ..> java.sql.DriverManager
+UtilsLayer.Connection ..> java.sql.SQLException
+UtilsLayer.JasperManager ..> java.sql.Connection
+UtilsLayer.JasperManager ..> java.util.Map
+UtilsLayer.JasperManager ..> net.sf.jasperreports.engine.JRException
+UtilsLayer.JasperManager ..> net.sf.jasperreports.engine.JasperFillManager
+UtilsLayer.JasperManager ..> net.sf.jasperreports.engine.JasperPrint
+UtilsLayer.JasperManager ..> net.sf.jasperreports.view.JasperViewer
+VisualLayer.AddBrandController ..> java.lang.Override
+VisualLayer.AddBrandController ..> javafx.fxml.FXML
+VisualLayer.AddBrandController ..> ModelLayer.Marca
+VisualLayer.AddBrandController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddBrandController ..> java.net.URL
+VisualLayer.AddBrandController ..> java.util.ResourceBundle
+VisualLayer.AddBrandController ..> javafx.scene.control.TextField
+VisualLayer.AddBrandController ..> javafx.stage.Stage
+VisualLayer.AddBrandController --|> javafx.fxml.Initializable
+VisualLayer.AddCategoryController ..> java.lang.Override
+VisualLayer.AddCategoryController ..> javafx.fxml.FXML
+VisualLayer.AddCategoryController ..> ModelLayer.Categorias
+VisualLayer.AddCategoryController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddCategoryController ..> java.awt.Toolkit
+VisualLayer.AddCategoryController ..> java.net.URL
+VisualLayer.AddCategoryController ..> java.util.ResourceBundle
+VisualLayer.AddCategoryController ..> javafx.scene.control.TextField
+VisualLayer.AddCategoryController ..> javafx.scene.input.KeyEvent
+VisualLayer.AddCategoryController ..> javafx.stage.Stage
+VisualLayer.AddCategoryController --|> javafx.fxml.Initializable
+VisualLayer.AddLoginController ..> java.lang.Override
+VisualLayer.AddLoginController ..> javafx.fxml.FXML
+VisualLayer.AddLoginController ..> ModelLayer.Role
+VisualLayer.AddLoginController ..> ModelLayer.User
+VisualLayer.AddLoginController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddLoginController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.AddLoginController ..> java.net.URL
+VisualLayer.AddLoginController ..> java.sql.SQLException
+VisualLayer.AddLoginController ..> java.util.List
+VisualLayer.AddLoginController ..> java.util.ResourceBundle
+VisualLayer.AddLoginController ..> java.util.logging.Level
+VisualLayer.AddLoginController ..> java.util.logging.Logger
+VisualLayer.AddLoginController ..> javafx.scene.control.ComboBox
+VisualLayer.AddLoginController ..> javafx.stage.Stage
+VisualLayer.AddLoginController --|> javafx.fxml.Initializable
+VisualLayer.AddModifyContractController ..> java.lang.Override
+VisualLayer.AddModifyContractController ..> javafx.fxml.FXML
+VisualLayer.AddModifyContractController ..> ModelLayer.Auto
+VisualLayer.AddModifyContractController ..> ModelLayer.Chofer
+VisualLayer.AddModifyContractController ..> ModelLayer.Contrato
+VisualLayer.AddModifyContractController ..> ModelLayer.FormaPago
+VisualLayer.AddModifyContractController ..> ModelLayer.Turista
+VisualLayer.AddModifyContractController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddModifyContractController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.AddModifyContractController ..> java.awt.Toolkit
+VisualLayer.AddModifyContractController ..> java.net.URL
+VisualLayer.AddModifyContractController ..> java.sql.Date
+VisualLayer.AddModifyContractController ..> java.time.LocalDate
+VisualLayer.AddModifyContractController ..> java.util.List
+VisualLayer.AddModifyContractController ..> java.util.ResourceBundle
+VisualLayer.AddModifyContractController ..> javafx.collections.ObservableList
+VisualLayer.AddModifyContractController ..> javafx.scene.control.ComboBox
+VisualLayer.AddModifyContractController ..> javafx.scene.control.DatePicker
+VisualLayer.AddModifyContractController ..> javafx.scene.control.TextField
+VisualLayer.AddModifyContractController ..> javafx.scene.input.KeyEvent
+VisualLayer.AddModifyContractController ..> javafx.stage.Stage
+VisualLayer.AddModifyContractController ..> javax.swing.JOptionPane
+VisualLayer.AddModifyContractController --|> javafx.fxml.Initializable
+VisualLayer.AddModifyCountryController ..> java.lang.Override
+VisualLayer.AddModifyCountryController ..> javafx.fxml.FXML
+VisualLayer.AddModifyCountryController ..> ModelLayer.Pais
+VisualLayer.AddModifyCountryController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddModifyCountryController ..> java.awt.Toolkit
+VisualLayer.AddModifyCountryController ..> java.net.URL
+VisualLayer.AddModifyCountryController ..> java.util.ResourceBundle
+VisualLayer.AddModifyCountryController ..> javafx.scene.control.TextField
+VisualLayer.AddModifyCountryController ..> javafx.scene.input.KeyEvent
+VisualLayer.AddModifyCountryController ..> javafx.stage.Stage
+VisualLayer.AddModifyCountryController --|> javafx.fxml.Initializable
+VisualLayer.AddModifyTarifController ..> java.lang.Override
+VisualLayer.AddModifyTarifController ..> javafx.fxml.FXML
+VisualLayer.AddModifyTarifController ..> ModelLayer.Modelo
+VisualLayer.AddModifyTarifController ..> ModelLayer.Tarifas
+VisualLayer.AddModifyTarifController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddModifyTarifController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.AddModifyTarifController ..> java.awt.Toolkit
+VisualLayer.AddModifyTarifController ..> java.net.URL
+VisualLayer.AddModifyTarifController ..> java.util.List
+VisualLayer.AddModifyTarifController ..> java.util.ResourceBundle
+VisualLayer.AddModifyTarifController ..> javafx.collections.ObservableList
+VisualLayer.AddModifyTarifController ..> javafx.scene.control.ComboBox
+VisualLayer.AddModifyTarifController ..> javafx.scene.control.TextField
+VisualLayer.AddModifyTarifController ..> javafx.scene.input.KeyEvent
+VisualLayer.AddModifyTarifController ..> javafx.stage.Stage
+VisualLayer.AddModifyTarifController --|> javafx.fxml.Initializable
+VisualLayer.AddUserController ..> java.lang.Override
+VisualLayer.AddUserController ..> javafx.fxml.FXML
+VisualLayer.AddUserController ..> ModelLayer.User
+VisualLayer.AddUserController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddUserController ..> java.net.URL
+VisualLayer.AddUserController ..> java.util.ResourceBundle
+VisualLayer.AddUserController ..> javafx.scene.control.PasswordField
+VisualLayer.AddUserController ..> javafx.scene.control.TextField
+VisualLayer.AddUserController ..> javafx.stage.Stage
+VisualLayer.AddUserController --|> javafx.fxml.Initializable
+VisualLayer.AddorModifyCarController ..> java.lang.Override
+VisualLayer.AddorModifyCarController ..> java.lang.SuppressWarnings
+VisualLayer.AddorModifyCarController ..> javafx.fxml.FXML
+VisualLayer.AddorModifyCarController ..> ModelLayer.Auto
+VisualLayer.AddorModifyCarController ..> ModelLayer.Modelo
+VisualLayer.AddorModifyCarController ..> ModelLayer.Situacion
+VisualLayer.AddorModifyCarController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddorModifyCarController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.AddorModifyCarController ..> java.awt.Toolkit
+VisualLayer.AddorModifyCarController ..> java.net.URL
+VisualLayer.AddorModifyCarController ..> java.util.List
+VisualLayer.AddorModifyCarController ..> java.util.ResourceBundle
+VisualLayer.AddorModifyCarController ..> javafx.collections.ObservableList
+VisualLayer.AddorModifyCarController ..> javafx.scene.control.ComboBox
+VisualLayer.AddorModifyCarController ..> javafx.scene.control.TextField
+VisualLayer.AddorModifyCarController ..> javafx.scene.input.KeyEvent
+VisualLayer.AddorModifyCarController ..> javafx.stage.Stage
+VisualLayer.AddorModifyCarController ..> javax.swing.JOptionPane
+VisualLayer.AddorModifyCarController --|> javafx.fxml.Initializable
+VisualLayer.AddorModifyDriverController ..> java.lang.Override
+VisualLayer.AddorModifyDriverController ..> javafx.fxml.FXML
+VisualLayer.AddorModifyDriverController ..> ModelLayer.Categorias
+VisualLayer.AddorModifyDriverController ..> ModelLayer.Chofer
+VisualLayer.AddorModifyDriverController ..> ModelLayer.Turista
+VisualLayer.AddorModifyDriverController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddorModifyDriverController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.AddorModifyDriverController ..> java.awt.Toolkit
+VisualLayer.AddorModifyDriverController ..> java.net.URL
+VisualLayer.AddorModifyDriverController ..> java.util.List
+VisualLayer.AddorModifyDriverController ..> java.util.ResourceBundle
+VisualLayer.AddorModifyDriverController ..> javafx.collections.ObservableList
+VisualLayer.AddorModifyDriverController ..> javafx.scene.control.ComboBox
+VisualLayer.AddorModifyDriverController ..> javafx.scene.control.TextField
+VisualLayer.AddorModifyDriverController ..> javafx.scene.input.KeyEvent
+VisualLayer.AddorModifyDriverController ..> javafx.stage.Stage
+VisualLayer.AddorModifyDriverController ..> javax.swing.JOptionPane
+VisualLayer.AddorModifyDriverController --|> javafx.fxml.Initializable
+VisualLayer.AddorModifyModelController ..> java.lang.Override
+VisualLayer.AddorModifyModelController ..> javafx.fxml.FXML
+VisualLayer.AddorModifyModelController ..> ModelLayer.Marca
+VisualLayer.AddorModifyModelController ..> ModelLayer.Modelo
+VisualLayer.AddorModifyModelController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddorModifyModelController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.AddorModifyModelController ..> java.net.URL
+VisualLayer.AddorModifyModelController ..> java.util.List
+VisualLayer.AddorModifyModelController ..> java.util.ResourceBundle
+VisualLayer.AddorModifyModelController ..> javafx.collections.ObservableList
+VisualLayer.AddorModifyModelController ..> javafx.scene.control.ComboBox
+VisualLayer.AddorModifyModelController ..> javafx.scene.control.TextField
+VisualLayer.AddorModifyModelController ..> javafx.stage.Stage
+VisualLayer.AddorModifyModelController ..> javax.swing.JOptionPane
+VisualLayer.AddorModifyModelController --|> javafx.fxml.Initializable
+VisualLayer.AddorModifyTuristController ..> java.lang.Override
+VisualLayer.AddorModifyTuristController ..> java.lang.SuppressWarnings
+VisualLayer.AddorModifyTuristController ..> javafx.fxml.FXML
+VisualLayer.AddorModifyTuristController ..> ModelLayer.Pais
+VisualLayer.AddorModifyTuristController ..> ModelLayer.Turista
+VisualLayer.AddorModifyTuristController ..> ServicesLayer.ServicesLocator
+VisualLayer.AddorModifyTuristController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.AddorModifyTuristController ..> java.awt.Toolkit
+VisualLayer.AddorModifyTuristController ..> java.net.URL
+VisualLayer.AddorModifyTuristController ..> java.util.List
+VisualLayer.AddorModifyTuristController ..> java.util.ResourceBundle
+VisualLayer.AddorModifyTuristController ..> javafx.collections.ObservableList
+VisualLayer.AddorModifyTuristController ..> javafx.scene.control.ComboBox
+VisualLayer.AddorModifyTuristController ..> javafx.scene.control.TextField
+VisualLayer.AddorModifyTuristController ..> javafx.scene.input.KeyEvent
+VisualLayer.AddorModifyTuristController ..> javafx.stage.Stage
+VisualLayer.AddorModifyTuristController ..> javax.swing.JOptionPane
+VisualLayer.AddorModifyTuristController ..> jdk.nashorn.internal.scripts.JO
+VisualLayer.AddorModifyTuristController --|> javafx.fxml.Initializable
+VisualLayer.AdminViewController ..> java.lang.Override
+VisualLayer.AdminViewController ..> javafx.fxml.FXML
+VisualLayer.AdminViewController ..> ModelLayer.Login
+VisualLayer.AdminViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.AdminViewController ..> java.net.URL
+VisualLayer.AdminViewController ..> java.util.List
+VisualLayer.AdminViewController ..> java.util.ResourceBundle
+VisualLayer.AdminViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.AdminViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.AdminViewController ..> javafx.collections.FXCollections
+VisualLayer.AdminViewController ..> javafx.scene.control.TableColumn
+VisualLayer.AdminViewController ..> javafx.scene.control.TableView
+VisualLayer.AdminViewController ..> javafx.stage.Stage
+VisualLayer.AdminViewController ..> javax.swing.JOptionPane
+VisualLayer.AdminViewController --|> javafx.fxml.Initializable
+VisualLayer.BrandsViewController ..> java.lang.Override
+VisualLayer.BrandsViewController ..> javafx.fxml.FXML
+VisualLayer.BrandsViewController ..> ModelLayer.Marca
+VisualLayer.BrandsViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.BrandsViewController ..> java.net.URL
+VisualLayer.BrandsViewController ..> java.util.List
+VisualLayer.BrandsViewController ..> java.util.ResourceBundle
+VisualLayer.BrandsViewController ..> java.util.logging.Level
+VisualLayer.BrandsViewController ..> java.util.logging.Logger
+VisualLayer.BrandsViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.BrandsViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.BrandsViewController ..> javafx.collections.FXCollections
+VisualLayer.BrandsViewController ..> javafx.scene.control.Button
+VisualLayer.BrandsViewController ..> javafx.scene.control.TableColumn
+VisualLayer.BrandsViewController ..> javafx.scene.control.TableView
+VisualLayer.BrandsViewController ..> javafx.stage.Stage
+VisualLayer.BrandsViewController ..> javax.swing.JOptionPane
+VisualLayer.BrandsViewController ..> ModelLayer.LoggedRole
+VisualLayer.BrandsViewController --|> javafx.fxml.Initializable
+VisualLayer.CarsViewController ..> java.lang.Override
+VisualLayer.CarsViewController ..> java.lang.SuppressWarnings
+VisualLayer.CarsViewController ..> javafx.fxml.FXML
+VisualLayer.CarsViewController ..> ModelLayer.Auto
+VisualLayer.CarsViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.CarsViewController ..> java.net.URL
+VisualLayer.CarsViewController ..> java.util.List
+VisualLayer.CarsViewController ..> java.util.ResourceBundle
+VisualLayer.CarsViewController ..> javafx.beans.property.SimpleFloatProperty
+VisualLayer.CarsViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.CarsViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.CarsViewController ..> javafx.collections.FXCollections
+VisualLayer.CarsViewController ..> javafx.scene.control.Button
+VisualLayer.CarsViewController ..> javafx.scene.control.TableColumn
+VisualLayer.CarsViewController ..> javafx.scene.control.TableView
+VisualLayer.CarsViewController ..> javafx.stage.Stage
+VisualLayer.CarsViewController ..> javax.swing.JOptionPane
+VisualLayer.CarsViewController ..> ModelLayer.LoggedRole
+VisualLayer.CarsViewController --|> javafx.fxml.Initializable
+VisualLayer.CategoryViewController ..> java.lang.Override
+VisualLayer.CategoryViewController ..> javafx.fxml.FXML
+VisualLayer.CategoryViewController ..> ModelLayer.Categorias
+VisualLayer.CategoryViewController ..> ModelLayer.Marca
+VisualLayer.CategoryViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.CategoryViewController ..> java.net.URL
+VisualLayer.CategoryViewController ..> java.util.List
+VisualLayer.CategoryViewController ..> java.util.ResourceBundle
+VisualLayer.CategoryViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.CategoryViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.CategoryViewController ..> javafx.collections.FXCollections
+VisualLayer.CategoryViewController ..> javafx.scene.control.TableColumn
+VisualLayer.CategoryViewController ..> javafx.scene.control.TableView
+VisualLayer.CategoryViewController ..> javafx.stage.Stage
+VisualLayer.CategoryViewController ..> javax.swing.JOptionPane
+VisualLayer.CategoryViewController --|> javafx.fxml.Initializable
+VisualLayer.ContractsViewController ..> java.lang.Override
+VisualLayer.ContractsViewController ..> javafx.fxml.FXML
+VisualLayer.ContractsViewController ..> ModelLayer.Contrato
+VisualLayer.ContractsViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.ContractsViewController ..> java.net.URL
+VisualLayer.ContractsViewController ..> java.util.ResourceBundle
+VisualLayer.ContractsViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.ContractsViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.ContractsViewController ..> javafx.collections.FXCollections
+VisualLayer.ContractsViewController ..> javafx.scene.control.Button
+VisualLayer.ContractsViewController ..> javafx.scene.control.TableColumn
+VisualLayer.ContractsViewController ..> javafx.scene.control.TableView
+VisualLayer.ContractsViewController ..> javafx.stage.Stage
+VisualLayer.ContractsViewController ..> javax.swing.JOptionPane
+VisualLayer.ContractsViewController ..> ModelLayer.LoggedRole
+VisualLayer.ContractsViewController --|> javafx.fxml.Initializable
+VisualLayer.CountryViewController ..> java.lang.Override
+VisualLayer.CountryViewController ..> javafx.fxml.FXML
+VisualLayer.CountryViewController ..> ModelLayer.Marca
+VisualLayer.CountryViewController ..> ModelLayer.Pais
+VisualLayer.CountryViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.CountryViewController ..> java.net.URL
+VisualLayer.CountryViewController ..> java.util.List
+VisualLayer.CountryViewController ..> java.util.ResourceBundle
+VisualLayer.CountryViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.CountryViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.CountryViewController ..> javafx.collections.FXCollections
+VisualLayer.CountryViewController ..> javafx.scene.control.TableColumn
+VisualLayer.CountryViewController ..> javafx.scene.control.TableView
+VisualLayer.CountryViewController ..> javafx.stage.Stage
+VisualLayer.CountryViewController ..> javax.swing.JOptionPane
+VisualLayer.CountryViewController --|> javafx.fxml.Initializable
+VisualLayer.DriversViewController ..> java.lang.Override
+VisualLayer.DriversViewController ..> javafx.fxml.FXML
+VisualLayer.DriversViewController ..> ModelLayer.Chofer
+VisualLayer.DriversViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.DriversViewController ..> java.net.URL
+VisualLayer.DriversViewController ..> java.util.ResourceBundle
+VisualLayer.DriversViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.DriversViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.DriversViewController ..> javafx.collections.FXCollections
+VisualLayer.DriversViewController ..> javafx.scene.control.Button
+VisualLayer.DriversViewController ..> javafx.scene.control.TableColumn
+VisualLayer.DriversViewController ..> javafx.scene.control.TableView
+VisualLayer.DriversViewController ..> javafx.stage.Stage
+VisualLayer.DriversViewController ..> javax.swing.JOptionPane
+VisualLayer.DriversViewController ..> ModelLayer.LoggedRole
+VisualLayer.DriversViewController --|> javafx.fxml.Initializable
+VisualLayer.LoginScreenController ..> java.lang.Override
+VisualLayer.LoginScreenController ..> javafx.fxml.FXML
+VisualLayer.LoginScreenController ..> ModelLayer.Login
+VisualLayer.LoginScreenController ..> ServicesLayer.ServicesLocator
+VisualLayer.LoginScreenController ..> com.sun.javafx.collections.ImmutableObservableList
+VisualLayer.LoginScreenController ..> java.net.URL
+VisualLayer.LoginScreenController ..> java.util.List
+VisualLayer.LoginScreenController ..> java.util.ResourceBundle
+VisualLayer.LoginScreenController ..> javafx.scene.control.ComboBox
+VisualLayer.LoginScreenController ..> javafx.scene.control.PasswordField
+VisualLayer.LoginScreenController ..> javafx.stage.Stage
+VisualLayer.LoginScreenController ..> javax.swing.JOptionPane
+VisualLayer.LoginScreenController ..> ModelLayer.LoggedRole
+VisualLayer.LoginScreenController --|> javafx.fxml.Initializable
+VisualLayer.LoginViewController ..> java.lang.Override
+VisualLayer.LoginViewController ..> javafx.fxml.FXML
+VisualLayer.LoginViewController ..> ModelLayer.Login
+VisualLayer.LoginViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.LoginViewController ..> java.net.URL
+VisualLayer.LoginViewController ..> java.util.ResourceBundle
+VisualLayer.LoginViewController ..> javafx.scene.control.Label
+VisualLayer.LoginViewController ..> javafx.scene.control.PasswordField
+VisualLayer.LoginViewController ..> javafx.scene.control.TextField
+VisualLayer.LoginViewController ..> javafx.scene.paint.Color
+VisualLayer.LoginViewController ..> javafx.stage.Stage
+VisualLayer.LoginViewController ..> javax.swing.JOptionPane
+VisualLayer.LoginViewController ..> ModelLayer.LoggedRole
+VisualLayer.LoginViewController --|> javafx.fxml.Initializable
+VisualLayer.MainClass ..> java.lang.Override
+VisualLayer.MainClass ..> java.lang.SuppressWarnings
+VisualLayer.MainClass ..> ModelLayer.Auto
+VisualLayer.MainClass ..> ModelLayer.Chofer
+VisualLayer.MainClass ..> ModelLayer.Contrato
+VisualLayer.MainClass ..> ModelLayer.Pais
+VisualLayer.MainClass ..> ModelLayer.Tarifas
+VisualLayer.MainClass ..> ModelLayer.Turista
+VisualLayer.MainClass ..> java.io.IOException
+VisualLayer.MainClass ..> java.util.logging.Level
+VisualLayer.MainClass ..> java.util.logging.Logger
+VisualLayer.MainClass --|> javafx.application.Application
+VisualLayer.MainClass ..> javafx.fxml.FXMLLoader
+VisualLayer.MainClass ..> javafx.scene.Scene
+VisualLayer.MainClass ..> javafx.scene.layout.AnchorPane
+VisualLayer.MainClass ..> javafx.stage.Stage
+VisualLayer.MainClass ..> javafx.stage.StageStyle
+VisualLayer.MainClass ..> ModelLayer.LoggedRole
+VisualLayer.ModelsViewController ..> java.lang.Override
+VisualLayer.ModelsViewController ..> javafx.fxml.FXML
+VisualLayer.ModelsViewController ..> ModelLayer.Modelo
+VisualLayer.ModelsViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.ModelsViewController ..> java.net.URL
+VisualLayer.ModelsViewController ..> java.util.List
+VisualLayer.ModelsViewController ..> java.util.ResourceBundle
+VisualLayer.ModelsViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.ModelsViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.ModelsViewController ..> javafx.collections.FXCollections
+VisualLayer.ModelsViewController ..> javafx.scene.control.Button
+VisualLayer.ModelsViewController ..> javafx.scene.control.TableColumn
+VisualLayer.ModelsViewController ..> javafx.scene.control.TableView
+VisualLayer.ModelsViewController ..> javafx.stage.Stage
+VisualLayer.ModelsViewController ..> javax.swing.JOptionPane
+VisualLayer.ModelsViewController ..> ModelLayer.LoggedRole
+VisualLayer.ModelsViewController --|> javafx.fxml.Initializable
+VisualLayer.PayFormViewController ..> java.lang.Override
+VisualLayer.PayFormViewController ..> javafx.fxml.FXML
+VisualLayer.PayFormViewController ..> ModelLayer.FormaPago
+VisualLayer.PayFormViewController ..> ModelLayer.Marca
+VisualLayer.PayFormViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.PayFormViewController ..> java.net.URL
+VisualLayer.PayFormViewController ..> java.util.List
+VisualLayer.PayFormViewController ..> java.util.ResourceBundle
+VisualLayer.PayFormViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.PayFormViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.PayFormViewController ..> javafx.collections.FXCollections
+VisualLayer.PayFormViewController ..> javafx.scene.control.TableColumn
+VisualLayer.PayFormViewController ..> javafx.scene.control.TableView
+VisualLayer.PayFormViewController ..> javafx.stage.Stage
+VisualLayer.PayFormViewController ..> javax.swing.JOptionPane
+VisualLayer.PayFormViewController --|> javafx.fxml.Initializable
+VisualLayer.RoleSelectorViewController ..> java.lang.Override
+VisualLayer.RoleSelectorViewController ..> javafx.fxml.FXML
+VisualLayer.RoleSelectorViewController ..> java.net.URL
+VisualLayer.RoleSelectorViewController ..> java.util.ResourceBundle
+VisualLayer.RoleSelectorViewController ..> javafx.event.Event
+VisualLayer.RoleSelectorViewController ..> javafx.scene.control.Label
+VisualLayer.RoleSelectorViewController ..> javafx.scene.control.Tooltip
+VisualLayer.RoleSelectorViewController ..> javafx.scene.effect.Glow
+VisualLayer.RoleSelectorViewController ..> javafx.scene.effect.Light
+VisualLayer.RoleSelectorViewController ..> javafx.scene.effect.Lighting
+VisualLayer.RoleSelectorViewController ..> javafx.scene.image.ImageView
+VisualLayer.RoleSelectorViewController ..> javafx.scene.paint.Color
+VisualLayer.RoleSelectorViewController ..> javafx.stage.Stage
+VisualLayer.RoleSelectorViewController ..> ModelLayer.LoggedRole
+VisualLayer.RoleSelectorViewController --|> javafx.fxml.Initializable
+VisualLayer.StartPageController ..> java.lang.Override
+VisualLayer.StartPageController ..> ServicesLayer.ServicesLocator
+VisualLayer.StartPageController ..> java.net.URL
+VisualLayer.StartPageController ..> java.util.ResourceBundle
+VisualLayer.StartPageController ..> javafx.stage.Stage
+VisualLayer.StartPageController --|> javafx.fxml.Initializable
+VisualLayer.TariffViewController ..> java.lang.Override
+VisualLayer.TariffViewController ..> javafx.fxml.FXML
+VisualLayer.TariffViewController ..> ModelLayer.Tarifas
+VisualLayer.TariffViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.TariffViewController ..> java.net.URL
+VisualLayer.TariffViewController ..> java.util.List
+VisualLayer.TariffViewController ..> java.util.ResourceBundle
+VisualLayer.TariffViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.TariffViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.TariffViewController ..> javafx.collections.FXCollections
+VisualLayer.TariffViewController ..> javafx.scene.control.Button
+VisualLayer.TariffViewController ..> javafx.scene.control.TableColumn
+VisualLayer.TariffViewController ..> javafx.scene.control.TableView
+VisualLayer.TariffViewController ..> javafx.stage.Stage
+VisualLayer.TariffViewController ..> javax.swing.JOptionPane
+VisualLayer.TariffViewController ..> ModelLayer.LoggedRole
+VisualLayer.TariffViewController --|> javafx.fxml.Initializable
+VisualLayer.TuristsViewController ..> java.lang.Override
+VisualLayer.TuristsViewController ..> javafx.fxml.FXML
+VisualLayer.TuristsViewController ..> ModelLayer.Turista
+VisualLayer.TuristsViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.TuristsViewController ..> java.net.URL
+VisualLayer.TuristsViewController ..> java.util.ResourceBundle
+VisualLayer.TuristsViewController ..> javafx.beans.property.SimpleIntegerProperty
+VisualLayer.TuristsViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.TuristsViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.TuristsViewController ..> javafx.collections.FXCollections
+VisualLayer.TuristsViewController ..> javafx.scene.control.TableColumn
+VisualLayer.TuristsViewController ..> javafx.scene.control.TableView
+VisualLayer.TuristsViewController ..> javafx.stage.Stage
+VisualLayer.TuristsViewController ..> javax.swing.JOptionPane
+VisualLayer.TuristsViewController --|> javafx.fxml.Initializable
+VisualLayer.UsersViewController ..> java.lang.Override
+VisualLayer.UsersViewController ..> javafx.fxml.FXML
+VisualLayer.UsersViewController ..> ModelLayer.Login
+VisualLayer.UsersViewController ..> ModelLayer.User
+VisualLayer.UsersViewController ..> ServicesLayer.ServicesLocator
+VisualLayer.UsersViewController ..> java.net.URL
+VisualLayer.UsersViewController ..> java.util.List
+VisualLayer.UsersViewController ..> java.util.ResourceBundle
+VisualLayer.UsersViewController ..> javafx.beans.property.SimpleStringProperty
+VisualLayer.UsersViewController ..> javafx.beans.value.ObservableValue
+VisualLayer.UsersViewController ..> javafx.collections.FXCollections
+VisualLayer.UsersViewController ..> javafx.scene.control.TableColumn
+VisualLayer.UsersViewController ..> javafx.scene.control.TableView
+VisualLayer.UsersViewController ..> javafx.stage.Stage
+VisualLayer.UsersViewController ..> javax.swing.JOptionPane
+VisualLayer.UsersViewController --|> javafx.fxml.Initializable
+contrato32marca32y32modelo_1492167621460_59528 --|> JREvaluator
+contrato32marca32y32modelo_1492167625459_366352 --|> JREvaluator
+contrato32marca32y32modelo_1492167873209_166563 --|> JREvaluator
+contrato32marca32y32modelo_1492167877926_384989 --|> JREvaluator
+contrato32marca32y32modelo_1492520513259_364712 --|> JREvaluator
+contrato32marca32y32modelo_1492523878927_908526 --|> JREvaluator
+contrato32marca32y32modelo_1492523883150_76805 --|> JREvaluator
+contrato32marca32y32modelo_1492526011035_649634 --|> JREvaluator
+contrato32marca32y32modelo_1492526020279_886949 --|> JREvaluator
+contrato32marca32y32modelo_1492606144876_88742 --|> JREvaluator
+contrato32por32pais_1492169037600_110136 --|> JREvaluator
+contrato32por32pais_1492169042253_846817 --|> JREvaluator
+contrato32por32pais_1492974333614_538879 --|> JREvaluator
+contrato32por32pais_1492974339326_936992 --|> JREvaluator
+contrato32por32pais_1492974442846_804868 --|> JREvaluator
+contrato32por32pais_1492974447051_840631 --|> JREvaluator
+contrato32por32pais_1492974608531_158257 --|> JREvaluator
+contrato32por32pais_1492974612991_944332 --|> JREvaluator
+contratos_marca_modelo_1493492254916_405825 --|> JREvaluator
+contratos_marca_modelo_1493492258683_434688 --|> JREvaluator
+contratos_por_pais_1493492536208_288691 --|> JREvaluator
+contratos_por_pais_1493492539329_190168 --|> JREvaluator
+ingresos_anuales_1493492675333_658823 --|> JREvaluator
+ingresos_anuales_1493492679550_74502 --|> JREvaluator
+list32choferes_1491768462856_874495 --|> JREvaluator
+list32choferes_1491768468074_765221 --|> JREvaluator
+listado32contratos_1492521594059_289395 --|> JREvaluator
+listado32contratos_1492521601698_868334 --|> JREvaluator
+listado32contratos_1492521749726_299526 --|> JREvaluator
+listado32contratos_1492521783561_306998 --|> JREvaluator
+listado32contratos_1492521805962_476116 --|> JREvaluator
+listado32contratos_1492973056429_338624 --|> JREvaluator
+listado32contratos_1492973579773_704759 --|> JREvaluator
+listado_autos_1493484418056_930816 --|> JREvaluator
+listado_autos_1493484427745_3404 --|> JREvaluator
+listado_choferes_1493485032471_310677 --|> JREvaluator
+listado_choferes_1493485038691_823819 --|> JREvaluator
+listado_choferes_1493485053811_351866 --|> JREvaluator
+listado_choferes_1493485058161_252513 --|> JREvaluator
+listado_contratos_1493484712619_898210 --|> JREvaluator
+listado_contratos_1493484716214_422474 --|> JREvaluator
+listado_contratos_1493484741656_100109 --|> JREvaluator
+listado_situaciones_1492103488044_146266 --|> JREvaluator
+listado_situaciones_1492103493823_315195 --|> JREvaluator
+listado_situaciones_1492103702887_691219 --|> JREvaluator
+listado_situaciones_1492103706275_634368 --|> JREvaluator
+listado_situaciones_1493491832291_679471 --|> JREvaluator
+listado_situaciones_1493491837081_641751 --|> JREvaluator
+listado_turistas_1493484562992_64453 --|> JREvaluator
+listado_turistas_1493484566470_480564 --|> JREvaluator
+resumen32ingresos_1492175371518_178047 --|> JREvaluator
+resumen32ingresos_1492175376196_76655 --|> JREvaluator
+resumen32ingresos_1492176645836_353308 --|> JREvaluator
+resumen32ingresos_1492522475505_519580 --|> JREvaluator
+resumen32ingresos_1492522479167_849091 --|> JREvaluator
+resumen32ingresos_1492522625092_665056 --|> JREvaluator
+resumen32ingresos_1492522628934_909518 --|> JREvaluator
+resumen32ingresos_1492522793178_689204 --|> JREvaluator
+resumen32ingresos_1492522853776_680788 --|> JREvaluator
+resumen32ingresos_1492522856895_92159 --|> JREvaluator
+tur_x_pais_1491520151466_795733 --|> JREvaluator
+tur_x_pais_1491520163778_932099 --|> JREvaluator
+tur_x_pais_1491520265723_583640 --|> JREvaluator
+tur_x_pais_1491520273437_78733 --|> JREvaluator
+tur_x_pais_1491520396177_11030 --|> JREvaluator
+tur_x_pais_1491520399451_617126 --|> JREvaluator
+tur_x_pais_1491520425540_871745 --|> JREvaluator
+tur_x_pais_1491520429120_343545 --|> JREvaluator
+tur_x_pais_1492610476400_993896 --|> JREvaluator
+tur_x_pais_1492610491350_801383 --|> JREvaluator
+tur_x_pais_1492610717242_910220 --|> JREvaluator
+tur_x_pais_1492610761198_875464 --|> JREvaluator
+tur_x_pais_1492610778882_799864 --|> JREvaluator
+tur_x_pais_1492610792031_892677 --|> JREvaluator
+tur_x_pais_1492610814848_980989 --|> JREvaluator
+tur_x_pais_1492971957651_111915 --|> JREvaluator
+tur_x_pais_1492971962697_410900 --|> JREvaluator
+turistas_incumplidores_1493491963416_988080 --|> JREvaluator
+turistas_incumplidores_1493491968204_29132 --|> JREvaluator
+@enduml

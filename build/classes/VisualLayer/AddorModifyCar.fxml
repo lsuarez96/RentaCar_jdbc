@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="380.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.AddorModifyCarController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <Text fill="#c9c8c8" layoutX="138.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto" textAlignment="CENTER">
+            <font>
+                <Font name="Britannic Bold" size="53.0" />
+            </font>
+        </Text>
+        <Label layoutX="17.0" layoutY="106.0" text="Chapa:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="146.0" text="Modelo/Marca:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="190.0" text="Situación:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="237.0" text="Color:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="282.0" text="Kilometros:">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Button layoutX="153.0" layoutY="355.0" mnemonicParsing="false" onAction="#onAcceptButtonPressed" text="Aceptar" />
+        <TextField fx:id="plateTF" layoutX="89.0" layoutY="101.0" />
+        <TextField fx:id="colourTF" layoutX="76.0" layoutY="232.0" onKeyTyped="#keyPressedForLetters" />
+        <TextField fx:id="kmTF" layoutX="116.0" layoutY="277.0" onKeyTyped="#keyPressedForDigits" prefHeight="29.0" prefWidth="92.0" />
+        <ComboBox fx:id="modelCB" layoutX="150.0" layoutY="141.0" prefHeight="31.0" prefWidth="217.0" />
+        <ComboBox fx:id="situationCB" layoutX="106.0" layoutY="185.0" prefHeight="31.0" prefWidth="185.0" />
+    </children>
+</AnchorPane>

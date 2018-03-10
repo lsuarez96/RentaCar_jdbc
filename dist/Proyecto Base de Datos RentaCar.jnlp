@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Proyecto Base de Datos RentaCar.jnlp">
+  <information>
+    <title>Proyecto Base de Datos RentaCar</title>
+    <vendor>Luisito</vendor>
+    <description>Proyecto de Base de Datos</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\antlr-2.7.6.jar" size="443432" download="eager" />
+    <jar href="lib\asm-attrs.jar" size="16777" download="eager" />
+    <jar href="lib\asm.jar" size="26360" download="eager" />
+    <jar href="lib\commons-beanutils-1.7.jar" size="188671" download="eager" />
+    <jar href="lib\commons-collections-2.1.1.jar" size="175426" download="eager" />
+    <jar href="lib\commons-digester-1.7.jar" size="139966" download="eager" />
+    <jar href="lib\commons-logging-1.0.4.jar" size="38015" download="eager" />
+    <jar href="lib\controlsfx-8.0.6.jar" size="848492" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\iReport.jar" size="7051958" download="eager" />
+    <jar href="lib\itext-1.3.1.jar" size="1553403" download="eager" />
+    <jar href="lib\jasperreports-1.3.3.jar" size="1681719" download="eager" />
+    <jar href="lib\jasperreports-extensions-1.3.1.jar" size="18346" download="eager" />
+    <jar href="lib\jta.jar" size="8812" download="eager" />
+    <jar href="lib\poi-2.0-final-20040126.jar" size="619881" download="eager" />
+    <jar href="lib\postgresql-9.3-1100-jdbc41.jar" size="587064" download="eager" />
+    <jar href="lib\servlet.jar" size="40813" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Proyecto Base de Datos RentaCar" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="VisualLayer.MainClass"  name="Proyecto Base de Datos RentaCar" />
+  <update check="always"/>
+</jnlp>

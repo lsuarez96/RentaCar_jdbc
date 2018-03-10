@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="375.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.AddLoginController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <Button layoutX="142.0" layoutY="255.0" mnemonicParsing="false" onAction="#onAcceptPressed" text="Aceptar" />
+        <Text fill="#dad6d6" layoutX="138.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+            <font>
+                <Font name="Britannic Bold" size="41.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="userCB" layoutX="91.0" layoutY="107.0" prefHeight="31.0" prefWidth="193.0" promptText="Usuario" />
+        <CheckBox fx:id="adm" layoutX="21.0" layoutY="203.0" mnemonicParsing="false" text="Administrador" />
+        <CheckBox fx:id="mng" layoutX="157.0" layoutY="203.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="84.0" text="Gerente" />
+        <CheckBox fx:id="dep" layoutX="263.0" layoutY="203.0" mnemonicParsing="false" text="Dependiente" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="217.0" prefWidth="277.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.AddCategoryController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <Text fill="#c9c8c8" layoutX="58.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria">
+            <font>
+                <Font name="Britannic Bold" size="40.0" />
+            </font>
+        </Text>
+        <Label layoutX="14.0" layoutY="92.0" text="Categoria:">
+            <font>
+                <Font name="System Bold Italic" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="cat" layoutX="100.0" layoutY="90.0" onKeyTyped="#keyPressedForLetters" />
+        <Button layoutX="103.0" layoutY="172.0" mnemonicParsing="false" onAction="#onAdd" text="Aceptar" />
+    </children>
+</AnchorPane>

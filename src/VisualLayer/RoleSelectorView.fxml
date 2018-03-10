@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="454.0" prefWidth="382.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="VisualLayer.RoleSelectorViewController">
+    <stylesheets>
+        <URL value="@LoginCSS.css" />
+    </stylesheets>
+    <children>
+        <ImageView fx:id="adm" fitHeight="109.0" fitWidth="129.0" layoutX="44.0" layoutY="39.0" onMouseClicked="#onAdminPressed" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@com_facebook_profile_picture_blank_square.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="mng" fitHeight="109.0" fitWidth="109.0" layoutX="44.0" layoutY="171.0" onMouseClicked="#onManagerPressed" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@com_facebook_profile_picture_blank_square.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="dep" fitHeight="109.0" fitWidth="109.0" layoutX="44.0" layoutY="299.0" onMouseClicked="#onDependPressed" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@com_facebook_profile_picture_blank_square.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="admIMG" layoutX="176.0" layoutY="79.0" onMouseClicked="#onAdminPressed" onMouseEntered="#onMouseOver" onMouseExited="#onMouseExit" text="ADMINISTRADOR">
+            <font>
+                <Font name="Arial Black" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="mngIMG" layoutX="176.0" layoutY="213.0" onMouseClicked="#onManagerPressed" onMouseEntered="#onMouseOver" onMouseExited="#onMouseExit" text="GERENTE">
+            <font>
+                <Font name="Arial Black" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="depIMG" layoutX="176.0" layoutY="339.0" onMouseClicked="#onDependPressed" onMouseEntered="#onMouseOver" onMouseExited="#onMouseExit" text="DEPENDIENTE">
+            <font>
+                <Font name="Arial Black" size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

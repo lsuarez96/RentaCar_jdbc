@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="411.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.AboutController">
+    <stylesheets>
+        <URL value="@LoginCSS2.css" />
+    </stylesheets>
+    <children>
+        <Label fx:id="appName" layoutX="55.0" layoutY="14.0" prefHeight="40.0" prefWidth="322.0" stylesheets="@LoginCSS2.css" text="Gestor Renta Car" textAlignment="CENTER" textFill="#ffffffed">
+            <effect>
+                <Reflection />
+            </effect>
+            <font>
+                <Font name="Courier New Bold" size="33.0" />
+            </font>
+        </Label>
+        <Label fx:id="developers" layoutX="137.0" layoutY="89.0" styleClass="label" stylesheets="@LoginCSS2.css" text="Desarrolladores:" textAlignment="CENTER" textFill="#ffffffed">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="developer1Name" layoutX="27.0" layoutY="122.0" styleClass="label" stylesheets="@LoginCSS2.css" text="Luis Suarez Gonzalez" textAlignment="CENTER" textFill="#ffffffed">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="developer2Name" layoutX="27.0" layoutY="157.0" styleClass="label" stylesheets="@LoginCSS2.css" text="Dayle Avellan Gomez" textAlignment="CENTER" textFill="#ffffffed">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="tutor" layoutX="175.0" layoutY="185.0" styleClass="label" stylesheets="@LoginCSS2.css" text="Tutor:" textAlignment="CENTER" textFill="#ffffffed">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="tutorName" layoutX="27.0" layoutY="219.0" styleClass="label" stylesheets="@LoginCSS2.css" text="Ing. Rodnel" textAlignment="CENTER" textFill="#ffffffed">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

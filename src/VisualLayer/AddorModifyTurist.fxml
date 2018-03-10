@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="353.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.AddorModifyTuristController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <Text fill="#c9c8c8" layoutX="105.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turista">
+            <font>
+                <Font name="Britannic Bold" size="46.0" />
+            </font>
+        </Text>
+        <Label layoutX="13.0" layoutY="97.0" text="Pasaporte:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="131.0" text="Nombre:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="173.0" text="Apellidos:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="11.0" layoutY="217.0" text="Teléfono:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="254.0" text="Edad:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="13.0" layoutY="296.0" text="Sexo:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="342.0" text="País:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Button layoutX="137.0" layoutY="442.0" mnemonicParsing="false" onAction="#onAcceptPressed" text="Aceptar" />
+        <TextField fx:id="idTF" layoutX="105.0" layoutY="95.0" prefHeight="29.0" prefWidth="201.0" />
+        <TextField fx:id="nameTF" layoutX="105.0" layoutY="131.0" onKeyTyped="#keyPressedForLetters" prefHeight="29.0" prefWidth="201.0" />
+        <TextField fx:id="lastNameTF" layoutX="105.0" layoutY="171.0" onKeyTyped="#keyPressedForLetters" prefHeight="29.0" prefWidth="201.0" />
+        <TextField fx:id="phoneTF" layoutX="102.0" layoutY="217.0" onKeyTyped="#keyPressedForDigits" />
+        <TextField fx:id="ageTF" layoutX="102.0" layoutY="254.0" onKeyTyped="#keyPressedForDigits" prefHeight="29.0" prefWidth="48.0" />
+        <ComboBox fx:id="sexCB" layoutX="93.0" layoutY="296.0" prefHeight="31.0" prefWidth="193.0" />
+        <ComboBox fx:id="countryCB" layoutX="93.0" layoutY="342.0" prefHeight="31.0" prefWidth="215.0" />
+    </children>
+</AnchorPane>

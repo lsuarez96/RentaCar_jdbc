@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="182.0" prefWidth="295.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="VisualLayer.AddBrandController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <Text fill="#c9c8c8" layoutX="93.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+            <font>
+                <Font name="Britannic Bold" size="40.0" />
+            </font>
+        </Text>
+        <TextField fx:id="brandTF" layoutX="106.0" layoutY="67.0" />
+        <Label layoutX="14.0" layoutY="64.0" text="Marca:">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Button layoutX="108.0" layoutY="137.0" mnemonicParsing="false" onAction="#onAcceptPressed" text="Aceptar" />
+    </children>
+</AnchorPane>

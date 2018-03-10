@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="939.0" styleClass="mainFxmlClass" stylesheets="@MyStylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.StartPageController">
+    <children>
+        <ImageView fitHeight="568.0" fitWidth="939.0" pickOnBounds="true" styleClass="root">
+            <image>
+                <Image url="@map.jpg" />
+            </image>
+        </ImageView>
+        <Circle fx:id="cont" layoutX="194.0" layoutY="172.0" onMouseClicked="#onContratoSelect" radius="96.0" strokeType="INSIDE">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#d2e9ff21" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <effect>
+                <Glow level="1.0" />
+            </effect>
+            <stroke>
+                <RadialGradient centerX="0.5388888888888889" centerY="0.2761904761904762" radius="0.5">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#f5faff2e" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </stroke>
+        </Circle>
+        <Circle fx:id="tur" layoutX="709.0" layoutY="166.0" onMouseClicked="#onTuristaSelect" radius="100.0" strokeType="INSIDE">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#d2e9ff21" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <effect>
+                <Glow level="1.0" />
+            </effect>
+            <stroke>
+                <RadialGradient centerX="0.5388888888888889" centerY="0.2761904761904762" radius="0.5">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#f5faff2e" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </stroke>
+        </Circle>
+        <Circle fx:id="car" layoutX="198.0" layoutY="429.0" onMouseClicked="#onAutoSelect" radius="100.0" strokeType="INSIDE">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#d2e9ff21" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <effect>
+                <Glow level="1.0" />
+            </effect>
+            <stroke>
+                <RadialGradient centerX="0.5388888888888889" centerY="0.2761904761904762" radius="0.5">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#f5faff2e" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </stroke>
+        </Circle>
+        <Circle fx:id="driv" layoutX="710.0" layoutY="429.0" onMouseClicked="#onChoferSelect" radius="100.0" strokeType="INSIDE">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#d2e9ff21" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <effect>
+                <Glow level="1.0" />
+            </effect>
+            <stroke>
+                <RadialGradient centerX="0.5388888888888889" centerY="0.2761904761904762" radius="0.5">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#f5faff2e" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </stroke>
+        </Circle>
+        <Label fx:id="contlb" layoutX="126.0" layoutY="149.0" onMouseClicked="#onContratoSelect" text="Contratos" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="32.0" />
+            </font>
+            <effect>
+                <Reflection />
+            </effect>
+        </Label>
+        <Label fx:id="turlb" layoutX="648.0" layoutY="142.0" onMouseClicked="#onTuristaSelect" text="Turistas">
+            <font>
+                <Font name="System Bold Italic" size="33.0" />
+            </font>
+            <effect>
+                <Reflection />
+            </effect>
+        </Label>
+        <Label fx:id="carlb" layoutX="155.0" layoutY="406.0" onMouseClicked="#onAutoSelect" text="Autos">
+            <font>
+                <Font name="System Bold Italic" size="32.0" />
+            </font>
+            <effect>
+                <Reflection />
+            </effect>
+        </Label>
+        <Label fx:id="drivlb" layoutX="645.0" layoutY="400.0" onMouseClicked="#onChoferSelect" text="Choferes">
+            <font>
+                <Font name="System Bold Italic" size="32.0" />
+            </font>
+            <effect>
+                <Reflection />
+            </effect>
+        </Label>
+        <MenuBar fx:id="barraMenu" layoutX="-1.0" layoutY="-7.0" opacity="0.89" prefHeight="35.0" prefWidth="939.0">
+            <menus>
+                <Menu fx:id="auxtab" mnemonicParsing="false" text="Tablas Auxiliares">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onModelsSelected" text="Modelos" />
+                        <MenuItem mnemonicParsing="false" onAction="#onBrandsSelected" text="Marcas" />
+                        <MenuItem mnemonicParsing="false" onAction="#onTariffSelected" text="Tarifas" />
+                        <MenuItem mnemonicParsing="false" onAction="#onCategorySelected" text="Categorias de Chofer" />
+                        <MenuItem mnemonicParsing="false" onAction="#onFormaPago" text="Formas de pago disponibles" />
+                        <MenuItem mnemonicParsing="false" onAction="#onCoutriesSelected" text="Listado de paises" />
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+                    </items>
+                </Menu>
+                <Menu fx:id="rep" mnemonicParsing="false" text="Reportes">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#loadTuristByCountryReport" text="Turistas por pais" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadCarsReport" text="Listado de autos" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadContractListReport" text="Listado de contratos" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadDriversReports" text="Listado de choferes" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadSituationReport" text="Resumen situacion de los autos" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadIncumpReport" text="Turistas que incumplieron el contrato" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadContractsByBrandModelReport" text="Contratos por marca y modelo" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadContractByCountryReport" text="Contratos por pais" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadIncomingsReport" text="Resumen de Ingresos" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ayuda">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Temas de Ayuda..." />
+                        <MenuItem mnemonicParsing="false" onAction="#onAboutPressed" text="About" />
+                    </items>
+                </Menu>
+                <Menu fx:id="us" mnemonicParsing="false" text="Usuario">
+                    <items>
+                        <MenuItem fx:id="userMenu" mnemonicParsing="false" onAction="#manageUsers" text="Gestionar Usuarios" />
+                    </items>
+                </Menu>
+            </menus>
+            <effect>
+                <Glow />
+            </effect>
+        </MenuBar>
+        <Label fx:id="userlb" accessibleHelp="Cerrar Sesion" accessibleRole="TOOLTIP" accessibleText="Cerrar Sesion" layoutX="809.0" layoutY="52.0" onMouseClicked="#closeSession" onMouseEntered="#onMouseOverUser" onMouseExited="#onMouseExited" onMouseMoved="#somethingStupid" prefHeight="28.0" prefWidth="110.0" text="Usuario" />
+    </children>
+</AnchorPane>

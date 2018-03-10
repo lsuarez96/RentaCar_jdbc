@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.ModelsViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="35.0" layoutY="26.0" prefHeight="408.0" prefWidth="532.0">
+            <columns>
+                <TableColumn fx:id="modelsCol" prefWidth="75.0" text="Modelos" />
+                <TableColumn fx:id="brandsCol" prefWidth="155.0" text="Marcas" />
+                <TableColumn fx:id="tarNCol" prefWidth="144.0" text="Tarifa Normal" />
+                <TableColumn fx:id="tarECol" prefWidth="121.0" text="Tarifa Especial" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="add" layoutX="118.0" layoutY="464.0" mnemonicParsing="false" onAction="#onAddPressed" prefHeight="31.0" prefWidth="86.0" text="Agregar">
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAddBrand" text="Agregar Marca" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddTarif" text="Agregar Tarifa" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Button>
+        <Button fx:id="del" layoutX="403.0" layoutY="464.0" mnemonicParsing="false" onAction="#onElimPressed" prefHeight="32.0" prefWidth="86.0" text="Eliminar" />
+        <Button layoutX="257.0" layoutY="464.0" mnemonicParsing="false" onAction="#onModifyPressed" prefHeight="32.0" prefWidth="86.0" text="Modificar" />
+    </children>
+</AnchorPane>

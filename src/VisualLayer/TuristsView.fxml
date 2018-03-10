@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="773.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.TuristsViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="33.0" layoutY="30.0" prefHeight="498.0" prefWidth="721.0">
+            <columns>
+                <TableColumn fx:id="passportCol" prefWidth="143.0" text="No. Pasaporte" />
+                <TableColumn fx:id="nameCol" prefWidth="142.0" text="Nombre" />
+                <TableColumn fx:id="lastNameCol" prefWidth="126.0" text="Apellidos" />
+                <TableColumn fx:id="sexCol" prefWidth="63.0" text="Sexo" />
+                <TableColumn fx:id="ageCol" prefWidth="44.0" text="Edad" />
+                <TableColumn fx:id="phoneCol" prefWidth="112.0" text="Telefono" />
+                <TableColumn fx:id="countryCol" prefWidth="90.0" text="Pais" />
+            </columns>
+        </TableView>
+        <Button layoutX="160.0" layoutY="551.0" mnemonicParsing="false" onAction="#onAddPressed" prefHeight="31.0" prefWidth="98.0" text="Agregar" />
+        <Button layoutX="329.0" layoutY="551.0" mnemonicParsing="false" onAction="#onModifyPressed" prefHeight="31.0" prefWidth="98.0" text="Modificar" />
+        <Button layoutX="507.0" layoutY="551.0" mnemonicParsing="false" onAction="#onElimPressed" prefHeight="31.0" prefWidth="98.0" text="Eliminar" />
+    </children>
+</AnchorPane>

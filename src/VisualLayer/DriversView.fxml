@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="703.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.DriversViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="42.0" layoutY="51.0" prefHeight="428.0" prefWidth="620.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="112.0" text="No. Identidad" />
+                <TableColumn fx:id="nameCol" prefWidth="111.0" text="Nombre" />
+                <TableColumn fx:id="lastNameCol" prefWidth="132.0" text="Apellidos" />
+                <TableColumn fx:id="categoryCol" prefWidth="89.0" text="Categoria" />
+                <TableColumn fx:id="addressCol" prefWidth="175.0" text="Direccion" />
+            </columns>
+        </TableView>
+        <Button fx:id="add" layoutX="164.0" layoutY="513.0" mnemonicParsing="false" onAction="#onAddPressed" prefHeight="31.0" prefWidth="92.0" text="Agregar" />
+        <Button fx:id="mod" layoutX="315.0" layoutY="513.0" mnemonicParsing="false" onAction="#onModifyPressed" text="Modificar" />
+        <Button fx:id="del" layoutX="480.0" layoutY="513.0" mnemonicParsing="false" onAction="#onElimPressed" prefHeight="31.0" prefWidth="92.0" text="Eliminar" />
+    </children>
+</AnchorPane>

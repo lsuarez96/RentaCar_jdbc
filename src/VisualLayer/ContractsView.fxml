@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="954.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.ContractsViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="17.0" layoutY="26.0" prefHeight="440.0" prefWidth="928.0">
+            <columns>
+                <TableColumn fx:id="idTurCol" prefWidth="120.0" text="No. Pasaporte" />
+                <TableColumn fx:id="plateCarCol" prefWidth="113.0" text="Chapa del auto" />
+                <TableColumn fx:id="startDateCol" prefWidth="121.0" text="Fecha de inicio" />
+                <TableColumn fx:id="endDateCol" prefWidth="104.0" text="Fecha fin" />
+                <TableColumn fx:id="idDriverCol" prefWidth="130.0" text="No. ID del Chofer" />
+                <TableColumn fx:id="payFormCol" prefWidth="118.0" text="Forma de pago" />
+                <TableColumn fx:id="deliveryDateCol" prefWidth="126.0" text="Fecha de entrega" />
+                <TableColumn fx:id="importCol" prefWidth="95.0" text="Importe total" />
+            </columns>
+        </TableView>
+        <Button layoutX="251.0" layoutY="497.0" mnemonicParsing="false" onAction="#onAddPressed" prefHeight="31.0" prefWidth="92.0" text="Agregar" />
+        <Button layoutX="439.0" layoutY="497.0" mnemonicParsing="false" onAction="#onModifyPressed" text="Modificar" />
+        <Button fx:id="del" layoutX="637.0" layoutY="497.0" mnemonicParsing="false" onAction="#onElimPressed" prefHeight="31.0" prefWidth="92.0" text="Eliminar" />
+    </children>
+</AnchorPane>

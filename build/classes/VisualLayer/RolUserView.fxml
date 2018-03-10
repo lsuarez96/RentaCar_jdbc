@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="620.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.RolUserViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <SplitPane dividerPositions="0.4741100323624595" layoutY="-2.0" prefHeight="396.0" prefWidth="620.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TreeView fx:id="treeView" layoutY="-8.0" onMouseClicked="#onItemSelected" prefHeight="358.0" prefWidth="325.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <Label layoutX="76.0" layoutY="7.0" text="Datos del Usuario:">
+                            <font>
+                                <Font name="Noto Sans CJK KR Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="12.0" layoutY="51.0" text="Nombre:">
+                            <font>
+                                <Font name="Noto Sans CJK KR Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="100.0" text="Apellidos:">
+                            <font>
+                                <Font name="Noto Sans CJK KR Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="12.0" layoutY="150.0" text="Usuario:">
+                            <font>
+                                <Font name="Noto Sans CJK KR Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="namelb" layoutX="92.0" layoutY="53.0" prefHeight="19.0" prefWidth="165.0" text="name data" />
+                        <Label fx:id="lnamelb" layoutX="92.0" layoutY="103.0" prefHeight="19.0" prefWidth="165.0" text="lname data" />
+                        <Label fx:id="userNlb" layoutX="89.0" layoutY="153.0" prefHeight="19.0" prefWidth="165.0" text="user data" />
+                        <Button layoutX="215.0" layoutY="312.0" mnemonicParsing="false" onAction="#elimUsuario" prefHeight="32.0" prefWidth="85.0" text="Eliminar" />
+                        <Button layoutX="112.0" layoutY="312.0" mnemonicParsing="false" onAction="#modifyUser" prefHeight="32.0" prefWidth="85.0" text="Modificar" />
+                        <Button layoutX="10.0" layoutY="312.0" mnemonicParsing="false" onAction="#addUser" prefHeight="32.0" prefWidth="85.0" text="Agregar" />
+                        <Button layoutX="77.0" layoutY="267.0" mnemonicParsing="false" onAction="#changePassword" text="Cambiar Contraseña" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <Button layoutX="56.0" layoutY="405.0" mnemonicParsing="false" onAction="#addLogin" text="Agregar" />
+        <Button layoutX="184.0" layoutY="404.0" mnemonicParsing="false" onAction="#elimPrivilege" text="Eliminar" />
+    </children>
+</AnchorPane>

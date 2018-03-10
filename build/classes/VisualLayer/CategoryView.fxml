@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="321.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="VisualLayer.CategoryViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="57.0" layoutY="41.0" prefHeight="256.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="catCol" prefWidth="75.0" text="Categoria" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button layoutX="35.0" layoutY="349.0" mnemonicParsing="false" onAction="#onAddPressed" prefHeight="31.0" prefWidth="86.0" text="Agregar" />
+        <Button layoutX="196.0" layoutY="349.0" mnemonicParsing="false" onAction="#onElimPressed" text="Eliminar" />
+    </children>
+</AnchorPane>

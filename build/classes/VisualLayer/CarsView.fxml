@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="583.0" prefWidth="708.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.CarsViewController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="21.0" layoutY="29.0" prefHeight="435.0" prefWidth="666.0">
+            <columns>
+                <TableColumn fx:id="plateCol" prefWidth="125.0" text="Chapa" />
+                <TableColumn fx:id="situationCol" prefWidth="97.0" text="Situación" />
+                <TableColumn fx:id="modelCol" prefWidth="75.0" text="Modelo" />
+                <TableColumn fx:id="brandCol" prefWidth="75.0" text="Marca" />
+                <TableColumn fx:id="kmCol" prefWidth="75.0" text="kilometraje" />
+                <TableColumn fx:id="colourCol" prefWidth="75.0" text="Color" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="add" layoutX="169.0" layoutY="525.0" mnemonicParsing="false" onAction="#onAddButtonPressed" prefHeight="31.0" prefWidth="92.0" text="Agregar">
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onMenuItem1Pressed" text="Agregar Modelo" />
+                        <MenuItem mnemonicParsing="false" onAction="#onMenuItem2Pressed" text="AgregarMarca" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Button>
+        <Button fx:id="del" layoutX="312.0" layoutY="525.0" mnemonicParsing="false" onAction="#onModifyButtonPressed" prefHeight="31.0" prefWidth="92.0" text="Modificar" />
+        <Button fx:id="mod" layoutX="448.0" layoutY="525.0" mnemonicParsing="false" onAction="#onElimButtonPressed" prefHeight="31.0" prefWidth="92.0" text="Eliminar" />
+    </children>
+</AnchorPane>

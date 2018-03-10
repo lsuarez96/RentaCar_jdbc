@@ -1,0 +1,2 @@
+git remote add origin https://github.com/lsuarez96/RentaCar_jdbc.git
+git push -u origin master

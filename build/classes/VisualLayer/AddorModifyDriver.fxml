@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="365.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.AddorModifyDriverController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <Text fill="#c9c8c8" layoutX="124.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chofer">
+            <font>
+                <Font name="Britannic Bold" size="40.0" />
+            </font>
+        </Text>
+        <Label layoutX="20.0" layoutY="96.0" text="No. ID:" />
+        <Label layoutX="20.0" layoutY="142.0" text="Nombre:" />
+        <Label layoutX="20.0" layoutY="191.0" text="Apellidos:" />
+        <Label layoutX="20.0" layoutY="241.0" text="Dirección:" />
+        <Label layoutX="20.0" layoutY="292.0" text="Categoría:" />
+        <TextField fx:id="idTF" layoutX="100.0" layoutY="90.0" onKeyTyped="#keyPressedForDigits" prefHeight="29.0" prefWidth="187.0" />
+        <TextField fx:id="nameTF" layoutX="100.0" layoutY="136.0" onKeyTyped="#keyPressedForLetters" prefHeight="29.0" prefWidth="187.0" />
+        <TextField fx:id="lastNameTF" layoutX="100.0" layoutY="185.0" onKeyTyped="#keyPressedForLetters" prefHeight="29.0" prefWidth="187.0" />
+        <TextField fx:id="addressTF" layoutX="100.0" layoutY="235.0" prefHeight="29.0" prefWidth="187.0" />
+        <ComboBox fx:id="categoryCB" layoutX="100.0" layoutY="288.0" prefHeight="31.0" prefWidth="187.0" />
+        <Button layoutX="137.0" layoutY="370.0" mnemonicParsing="false" onAction="#onAcceptPressed" prefHeight="31.0" prefWidth="91.0" text="Aceptar" />
+    </children>
+</AnchorPane>

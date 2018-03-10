@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="257.0" prefWidth="329.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisualLayer.AddModifyTarifController">
+    <stylesheets>
+        <URL value="@MyStylesheet.css" />
+    </stylesheets>
+    <children>
+        <Text fill="#c9c8c8" layoutX="103.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarifas">
+            <font>
+                <Font name="Britannic Bold" size="40.0" />
+            </font>
+        </Text>
+        <Label layoutX="32.0" layoutY="89.0" text="Tarifa Normal:">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="144.0" text="Tarifa Especial:">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="normalTF" layoutX="172.0" layoutY="90.0" onKeyTyped="#keyPressedForDigits" prefHeight="29.0" prefWidth="100.0" />
+        <TextField fx:id="speciallTF" layoutX="172.0" layoutY="145.0" onKeyTyped="#keyPressedForDigits" prefHeight="29.0" prefWidth="100.0" />
+        <Button layoutX="122.0" layoutY="199.0" mnemonicParsing="false" onAction="#onAcceptPressed" text="Aceptar" />
+    </children>
+</AnchorPane>
